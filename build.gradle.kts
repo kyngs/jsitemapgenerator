@@ -1,0 +1,45 @@
+plugins {
+    `java-library`
+    `maven-publish`
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri("https://repo.maven.apache.org/maven2/")
+    }
+}
+
+dependencies {
+    api("com.squareup.okhttp3:okhttp:4.2.2")
+    api("org.springframework:spring-web:5.2.1.RELEASE")
+    api("org.apache.httpcomponents:httpclient:4.5.10")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.5.2")
+    testImplementation("org.assertj:assertj-core:3.14.0")
+    testImplementation("org.mockito:mockito-core:3.1.0")
+}
+
+group = "xyz.kyngs"
+version = "0.1.0"
+description = "Java sitemap generator"
+java.sourceCompatibility = JavaVersion.VERSION_17
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+publishing {
+    publications.create<MavenPublication>("maven") {
+        from(components["java"])
+    }
+}
+
+tasks.withType<JavaCompile>() {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType<Javadoc>() {
+    options.encoding = "UTF-8"
+}
