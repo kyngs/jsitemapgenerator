@@ -14,7 +14,7 @@ dependencies {
     api("com.squareup.okhttp3:okhttp:4.2.2")
     api("org.springframework:spring-web:6.0.11")
     api("org.apache.httpcomponents:httpclient:4.5.10")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.5.2")
     testImplementation("org.assertj:assertj-core:3.24.2")
     testImplementation("org.mockito:mockito-core:3.1.0")
