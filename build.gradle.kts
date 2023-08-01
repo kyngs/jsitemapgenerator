@@ -21,7 +21,7 @@ dependencies {
 }
 
 group = "xyz.kyngs"
-version = "0.1.0"
+version = "1.0.0-SNAPSHOT"
 description = "Java sitemap generator"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
