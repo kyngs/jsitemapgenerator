@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     api("com.squareup.okhttp3:okhttp:4.2.2")
-    api("org.springframework:spring-web:5.2.1.RELEASE")
+    api("org.springframework:spring-web:6.0.11")
     api("org.apache.httpcomponents:httpclient:4.5.10")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.5.2")
