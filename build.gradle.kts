@@ -16,7 +16,7 @@ dependencies {
     api("org.apache.httpcomponents:httpclient:4.5.10")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.5.2")
-    testImplementation("org.assertj:assertj-core:3.14.0")
+    testImplementation("org.assertj:assertj-core:3.24.2")
     testImplementation("org.mockito:mockito-core:3.1.0")
 }
 
